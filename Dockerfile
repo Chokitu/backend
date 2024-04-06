@@ -14,7 +14,7 @@ FROM node:${NODE_VERSION}-alpine
 ENV NODE_ENV production
 
 # Set the working directory inside the container
-WORKDIR /usr/src/app
+WORKDIR /usr
 
 # Download dependencies as a separate step to take advantage of Docker's caching.
 # Leverage a cache mount to /root/.npm to speed up subsequent builds.
