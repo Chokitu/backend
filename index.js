@@ -2,7 +2,6 @@ const OpenAI = require('openai');
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-
 const openai = new OpenAI({
   apiKey: "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" 
 });
@@ -43,7 +42,7 @@ app.post("/chat", async (req, res) => {
     }
 });
 
-const port = 8080;
+const port = 6000;
 app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
 });
