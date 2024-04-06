@@ -14,7 +14,7 @@ FROM node:${NODE_VERSION}-alpine
 ENV NODE_ENV production
 
 # Set the working directory inside the container
-WORKDIR /
+WORKDIR /usr/src/app/backend
 
 # Copy package.json and package-lock.json to the working directory
 COPY backend/package*.json ./
